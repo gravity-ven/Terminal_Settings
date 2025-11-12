@@ -1,0 +1,60 @@
+# Ghostty configuration for AI workloads with memory efficiency
+# Solarized Osaka theme integration
+
+# Theme and Appearance
+theme = solarized-osaka
+background-opacity = 0.95
+font-size = 20
+font-family = "JetBrainsMono Nerd Font"
+font-family-bold = "JetBrainsMono Nerd Font"
+
+# Performance optimizations for AI workloads
+resize-delay = 0
+fps = 30
+gpu-acceleration = true
+scrollback-limit = 10000
+
+# Tab management
+tab-position = bottom
+show-tab-indicator = true
+tab-bar-style = powerline
+
+# Solarized Osaka Colors (Base Colors)
+foreground = #93a1a1
+background = #002b36
+cursor-color = #93a1a1
+
+# Normal colors
+color-0 = #073642  # blackbright
+color-1 = #dc322f  # red
+color-2 = #859900  # green
+color-3 = #b58900  # yellow
+color-4 = #268bd2  # blue
+color-5 = #d33682  # magenta
+color-6 = #2aa198  # cyan
+color-7 = #eee8d5  # white
+
+# Bright colors
+color-8 = #002b36  # bright black
+color-9 = #cb4b16  # bright red
+color-10 = #586e75  # bright green
+color-11 = #657b83  # bright yellow
+color-12 = #839496  # bright blue
+color-13 = #6c71c4  # bright magenta
+color-14 = #073642  # bright cyan
+color-15 = #fdf6e3  # bright white
+
+# AI workload optimizations
+shell-integration = true
+clipboard-read = true
+clipboard-write = true
+
+# Key bindings for productivity
+keybind = ctrl+shift+n=new_tab
+keybind = ctrl+shift+w=close_tab
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+
+# Memory efficiency settings
+working-directory = true
+confirm-close-surface = false
