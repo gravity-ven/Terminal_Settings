@@ -27,14 +27,50 @@ window:
   decorations: full
   startup_mode: Windowed
 
-# Scrolling
+# Scrolling - memory optimized
 scrolling:
-  history: 10000
+  history: 5000  # Reduced from 10000 to save memory
   multiplier: 3
+  # Reduce memory-intensive features
+  save_to_clipboard: false
 
-# Performance settings for AI workloads
+# Performance settings for AI workloads (memory optimized)
 draw_bold_text_with_bright_colors: true
 dynamic_title: true
+
+# Memory efficiency optimizations
+# Reduce scrollback limit to save memory
+scrolling:
+  history: 5000  # Reduced from 10000
+  multiplier: 3
+
+# Font rendering optimizations
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  size: 20.0
+  # GPU acceleration helps memory usage by offloading
+  use_thin_strokes: true
+
+# Window settings optimized for memory
+window:
+  opacity: 0.95
+  padding:
+    x: 6  # Reduced padding
+    y: 6
+  dynamic_padding: true
+  decorations: minimal  # Remove unnecessary elements
+  startup_mode: Windowed
+  # Memory-focused optimizations
+  option_as_alt: both  # Reduce key event processing
+  hide_cursor_when_typing: false  # Disable extra tracking
 
 # Colors (fallback - main colors in solarized-osaka.yml)
 colors:

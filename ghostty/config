@@ -8,11 +8,23 @@ font-size = 20
 font-family = "JetBrainsMono Nerd Font"
 font-family-bold = "JetBrainsMono Nerd Font"
 
-# Performance optimizations for AI workloads
+# Performance optimizations for AI workloads (memory efficient)
 resize-delay = 0
 fps = 30
 gpu-acceleration = true
-scrollback-limit = 10000
+scrollback-limit = 5000  # Reduced from 10000
+
+# Memory efficiency optimizations
+# Reduce unnecessary tracking
+auto-update = false
+theme-change-animation = false
+
+# Font rendering optimizations
+font-weight-thin = true
+font-stretch = normal
+
+# Reduce memory usage for rendering
+resize-maintains-font-size = true
 
 # Tab management
 tab-position = bottom

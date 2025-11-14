@@ -62,9 +62,23 @@ config.window_padding = {
   bottom = 8,
 }
 
--- Performance optimizations
+-- Performance optimizations (memory efficient)
 config.max_fps = 30
-config.scrollback_lines = 10000
+config.scrollback_lines = 5000  -- Reduced from 10000
+
+-- Memory efficiency optimizations
+-- Reduce unnecessary features
+config.enable_wayland = false
+config.front_end = "WebGpu"  -- More memory efficient than OpenGL
+config.window_close_confirmation = "NeverPrompt"
+
+-- Optimize rendering
+config.enable_kitty_keyboard = true
+config.enable_csi_u_key_encoding = true
+
+-- Reduce memory usage for tab bar
+config.show_tab_index_in_tab_bar = false
+config.show_new_tab_button_in_tab_bar = false
 
 -- Key bindings for productivity
 config.keys = {
